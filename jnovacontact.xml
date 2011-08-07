@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - JNovaContact</name>
+	<author>Rob Porter</author>
+	<creationDate>September 2010</creationDate>
+	<copyright>Copyright (C) 2010 CartaNova</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rob@cartanova.ca</authorEmail>
+	<authorUrl>www.cartanova.ca</authorUrl>
+	<version>0.2.1</version>
+	<description>JQuery Contact plugin for J! 1.5 and com_contact.</description>
+	<files>
+		<filename plugin="jnovacontact">jnovacontact.php</filename>
+		<filename plugin="jnovacontact">jnovacontact.js</filename>
+		<filename plugin="jnovacontact">jnovacontact.xml</filename>
+	</files>
+	<params>
+		<param name="response_html" type="textarea" default="&lt;p&gt;Thank you for contacting us. We will reply to your inquiry shortly.&lt;/p&gt;" label="Thank-you message" description="The text that appears below the 'form submitted' header." cols="55" rows="5" />
+		<param name="fade_in_time" type="text" default="750" label="jQuery FadeIn time" description="Fade in effect timing, in microseconds." />
+		<param name="width_manual" type="radio" default="0" label="Enable manually specified width" description="If this is set to 'yes', the form will use the width specified below.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="width" type="text" default="350" label="Form width" description="Width of form in pixels (you may over-ride this in CSS)" />
+	</params>
+</install>
